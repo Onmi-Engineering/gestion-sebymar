@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sebymar_view_order_form_inherit_total_discount" model="ir.ui.view">
+            <field name="name">sebymar_view_order_form_inherit_total_discount</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='tax_totals']" position="before">
+                    <!-- <t t-if="total_discount &gt; 1">
+                    <field name="total_discount" widget="monetary"/>
+                    </t> -->
+                    <!-- <t t-if="total_discount &gt; 0"> -->
+                        <field name="total_discount" widget="monetary" />
+                    
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

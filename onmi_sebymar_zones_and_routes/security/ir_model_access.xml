@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="zone_model_access_right_admin" model="ir.model.access">
+            <field name="name">zone_model_access_right_admin</field>
+            <field name="model_id" ref="model_zone"/>
+            <field name="active">1</field>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_unlink">1</field>
+        </record>
+        <record id="route_model_access_right_admin" model="ir.model.access">
+            <field name="name">route_model_access_right_admin</field>
+            <field name="model_id" ref="model_route"/>
+            <field name="active">1</field>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_unlink">1</field>
+        </record>
+        <record id="company_contact_tag_model_access_right_admin" model="ir.model.access">
+            <field name="name">company_contact_tag_model_access_right_admin</field>
+            <field name="model_id" ref="model_company_contact_tag"/>
+            <field name="active">1</field>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_unlink">1</field>
+        </record>
+
+        <record id="group_onmi_categorias" model="res.groups">
+            <field name="name">Onmi categorìas</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record>
+    </data>
+</odoo>

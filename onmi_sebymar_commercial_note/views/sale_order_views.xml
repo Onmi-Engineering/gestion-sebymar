@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="sebymar_view_order_form_inherit_commercial_note" model="ir.ui.view">
+            <field name="name">ProjectName.ModelName.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page name="commercial_note" string="Commercial Note">
+                        <field name="commercial_note" widget="html"
+                               placeholder="You can register here info that logistic worker can see on pickings from this sale order."/>
+
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="onmi_inherit_view_sales_order_filter" model="ir.ui.view">
+            <field name="name">onmi_inherit_view_sales_order_filter</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='order_month']" position="after">
+                    <filter string="Order product" name="order_line_product" domain="[]"
+                            context="{'group_by': 'order_line_product'}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <template id="account_document_tax_discount">
+        <div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ms-auto">
+            <table class="table table-sm">
+                <tr class="border-black o_subtotal">
+                    <td>
+                        <strong>Total discount</strong>
+                    </td>
+                    <td class="text-end">
+                        <span t-field="o.total_discount" t-options='{"widget": "monetary"}' />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </template>
+
+    <template id="sale_document_tax_discount">
+        <div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ms-auto">
+            <table class="table table-sm">
+                <tr class="border-black o_subtotal">
+                    <td>
+                        <strong>Total discount</strong>
+                    </td>
+                    <td class="text-end">
+                        <span t-field="doc.total_discount" t-options='{"widget": "monetary"}' />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </template>
+
+    <template id="report_saleorder_document_inherit_sale_discount"
+        inherit_id="sale.report_saleorder_document">
+        <xpath expr="//div[@id='total']" position="before">
+           <t t-if="doc.total_discount &gt; 0">
+            <t t-call="onmi_sebymar_discount_orders_invoices.sale_document_tax_discount" />
+            </t>
+        </xpath>
+    </template>
+
+
+    <template id="report_invoice_document_inherit_account_discount"
+        inherit_id="account.report_invoice_document">
+        <xpath
+            expr="//table[contains(@class, 'table') and contains(@class, 'table-sm') and contains(@class, 'table-borderless') and @style='page-break-inside: avoid;']"
+            position="before">
+            <t t-if="o.total_discount &gt; 0">
+            <t t-call="onmi_sebymar_discount_orders_invoices.account_document_tax_discount" />
+            </t>
+
+        </xpath>
+    </template>
+
+
+</odoo>

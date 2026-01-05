@@ -1,7 +1,3 @@
-[submodule "TDG22018-sebymar"]
-	path = TDG22018-sebymar
-	url = git@github.com:Onmi-Engineering/TDG22018-sebymar.git
-
 [submodule "OCA/purchase-workflow"]
 	path = OCA/purchase-workflow
 	url = git@github.com:OCA/purchase-workflow.git

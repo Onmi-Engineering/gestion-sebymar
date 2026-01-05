@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="zone_form_view" model="ir.ui.view">
+            <field name="name">zone.form</field>
+            <field name="model">zone</field>
+            <field name="arch" type="xml">
+                <form string="Zones">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="Title"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="create_date"/>
+                            </group>
+                            <group>
+                                <field name="route_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="zone_tree_view" model="ir.ui.view">
+            <field name="name">zone.tree</field>
+            <field name="model">zone</field>
+            <field name="arch" type="xml">
+                <list string="Zones">
+                    <field name="name"/>
+                    <field name="create_date"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="zone_act_window" model="ir.actions.act_window">
+            <field name="name">Zones</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">zone</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    There is no examples click here to add new zones.
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="Zones" id="zone_menu" parent="contacts.res_partner_menu_config" action="zone_act_window"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_product_pricelist_purchase" model="res.groups">
+            <field name="name">Product Pricelist Purchase</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+            <field name="comment">The user will be able to access all product pricelist purchase and create/edit them.
+            </field>
+        </record>
+        <record id="product_pricelist_purchase_model_full_access" model="ir.model.access">
+            <field name="name">product_pricelist_purchase_model_full_access</field>
+            <field name="model_id" ref="model_product_pricelist_purchase"/>
+            <field name="group_id" ref="onmi_sebymar_pricelist_purchase.group_product_pricelist_purchase"/>
+            <field name="active">1</field>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_unlink">1</field>
+        </record>
+        <record id="product_pricelist_item_purchase_model_full_access" model="ir.model.access">
+            <field name="name">product_pricelist_item_purchase_model_full_access</field>
+            <field name="model_id" ref="model_product_pricelist_item_purchase"/>
+            <field name="group_id" ref="onmi_sebymar_pricelist_purchase.group_product_pricelist_purchase"/>
+            <field name="active">1</field>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_unlink">1</field>
+        </record>
+
+        <record id="product_pricelist_purchase_model_user_access" model="ir.model.access">
+            <field name="name">product_pricelist_purchase_model_user_access</field>
+            <field name="model_id" ref="model_product_pricelist_purchase"/>
+            <field name="group_id" ref="purchase.group_purchase_user"/>
+            <field name="active">1</field>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+        </record>
+        <record id="product_pricelist_item_purchase_model_user_access" model="ir.model.access">
+            <field name="name">product_pricelist_item_purchase_model_user_access</field>
+            <field name="model_id" ref="model_product_pricelist_item_purchase"/>
+            <field name="group_id" ref="purchase.group_purchase_user"/>
+            <field name="active">1</field>
+            <field name="perm_read">1</field>
+            <field name="perm_write">0</field>
+            <field name="perm_create">0</field>
+            <field name="perm_unlink">0</field>
+        </record>
+    </data>
+</odoo>

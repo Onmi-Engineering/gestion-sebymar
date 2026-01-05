@@ -1,0 +1,135 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* onmi_sebymar_datamatrix
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-23 15:52+0000\n"
+"PO-Revision-Date: 2023-03-23 16:52+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model,name:onmi_sebymar_datamatrix.model_stock_backorder_confirmation
+msgid "Backorder Confirmation"
+msgstr "Confirmación de entrega parcial"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_stock_picking__datamatrix_line_ids
+msgid "Datamatrix"
+msgstr "Datamatrix"
+
+#. module: onmi_sebymar_datamatrix
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_datamatrix.sebymar_view_picking_internal_search_inherit_datamatrix
+msgid "Datamatrix QR code"
+msgstr "Código QR"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model,name:onmi_sebymar_datamatrix.model_datamatrix
+msgid "Datamatrix lines"
+msgstr "Datamatrix"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__id
+msgid "ID"
+msgstr "Identificador"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_product_category__datamatrix
+msgid "In datamatrix"
+msgstr "Datamatrix"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__move_id
+msgid "Move"
+msgstr "Albarán"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__picking_id
+msgid "Picking"
+msgstr "Transferencia"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model,name:onmi_sebymar_datamatrix.model_product_category
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model.fields,field_description:onmi_sebymar_datamatrix.field_datamatrix__qr_code
+msgid "QR Code"
+msgstr "Código QR"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model,name:onmi_sebymar_datamatrix.model_stock_return_picking
+msgid "Return Picking"
+msgstr "Albarán de devolución"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model,name:onmi_sebymar_datamatrix.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: onmi_sebymar_datamatrix
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_datamatrix.sebymar_view_picking_form_inherit_datamatrix
+msgid "This button delete all QR code registered. Are you sure to continue?"
+msgstr ""
+"Este botón borra todos los códigos QR registrados. ¿Está seguro de "
+"continuar?"
+
+#. module: onmi_sebymar_datamatrix
+#: model:ir.model,name:onmi_sebymar_datamatrix.model_stock_picking
+msgid "Transfer"
+msgstr "Albarán"
+
+#. module: onmi_sebymar_datamatrix
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_datamatrix.sebymar_view_picking_form_inherit_datamatrix
+msgid "Update Datamatrix"
+msgstr "Actualizar Datamatrix"

@@ -1,0 +1,252 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* onmi_sebymar_pricelist_purchase
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-28 15:45+0000\n"
+"PO-Revision-Date: 2023-02-28 16:56+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__active
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields.selection,name:onmi_sebymar_pricelist_purchase.selection__product_pricelist_item_purchase__applied_on__3_global
+msgid "All Products"
+msgstr "Todos los productos"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__applied_on
+msgid "Apply On"
+msgstr "Aplicar en"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__company_id
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__create_uid
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__create_date
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__currency_id
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__discount
+msgid "Discount"
+msgstr "Descuento"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,help:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__discount
+msgid "Discount value between 0 and 100."
+msgstr "Valor de descuento entre 0 y 100."
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__display_name
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_pricelist_purchase.product_pricelist_purchase_search_view
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__id
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__id
+msgid "ID"
+msgstr "Identificador"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,help:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__active
+#: model:ir.model.fields,help:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__active
+msgid ""
+"If unchecked, it will allow you to hide the pricelist without removing it."
+msgstr "Si no está marcado, permitirá ocultar la tarifa sin borrarla."
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,help:onmi_sebymar_pricelist_purchase.field_purchase_order__pricelist_id
+msgid "If you change the pricelist, all the line discounts could be affected."
+msgstr "Si se cambia la tarifa, todos los descuentos podrían verse afectados."
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase____last_update
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__write_uid
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__write_date
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__name
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_pricelist_purchase.product_pricelist_purchase_form_view
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_pricelist_purchase.product_pricelist_purchase_search_view
+msgid "Name"
+msgstr "Nombre"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_pricelist_purchase.product_pricelist_purchase_form_view
+msgid "Price Rules"
+msgstr "Normas de Precio"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__pricelist_id
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_purchase_order__pricelist_id
+msgid "Pricelist"
+msgstr "Tarifa"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,help:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__applied_on
+msgid "Pricelist Item applicable on selected option"
+msgstr "Norma de tarifa aplicable en la opción seleccionada"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__name
+msgid "Pricelist Name"
+msgstr "Nombre de Tarifa"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.actions.act_window,name:onmi_sebymar_pricelist_purchase.product_pricelist_purchase_act_window
+#: model:ir.ui.menu,name:onmi_sebymar_pricelist_purchase.product_pricelist_purchase_menu
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_pricelist_purchase.product_pricelist_purchase_form_view
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_pricelist_purchase.product_pricelist_purchase_search_view
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_pricelist_purchase.product_pricelist_purchase_tree_view
+msgid "Pricelist Purchase"
+msgstr "Tarifas de Compra"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model,name:onmi_sebymar_pricelist_purchase.model_product_pricelist_item_purchase
+msgid "Pricelist Rule Purchase"
+msgstr "Reglas de tarifa de compra"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_purchase__item_ids
+msgid "Pricelist Rules"
+msgstr "Reglas de tarifa"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__product_tmpl_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__categ_id
+#: model:ir.model.fields.selection,name:onmi_sebymar_pricelist_purchase.selection__product_pricelist_item_purchase__applied_on__2_product_category
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model,name:onmi_sebymar_pricelist_purchase.model_product_pricelist_purchase
+#: model:res.groups,name:onmi_sebymar_pricelist_purchase.group_product_pricelist_purchase
+msgid "Product Pricelist Purchase"
+msgstr "Tarifa de compra"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,field_description:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__product_id
+msgid "Product Variant"
+msgstr "Variante de producto"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model,name:onmi_sebymar_pricelist_purchase.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model,name:onmi_sebymar_pricelist_purchase.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea de pedido de compra"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,help:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__categ_id
+msgid ""
+"Specify a product category if this rule only applies to products belonging "
+"to this category or its children categories. Keep empty otherwise."
+msgstr ""
+"Especificar la categoría de producto si esta norma aplica a productos "
+"pertenecientes a la categoría en cuestión o sus hijas. Mantenerla vacía en "
+"otro caso."
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,help:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__product_id
+msgid ""
+"Specify a product if this rule only applies to one product. Keep empty "
+"otherwise."
+msgstr ""
+"Especificar un producto si esta regla solo aplica a un producto. Quedar "
+"vacío en otro caso."
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:ir.model.fields,help:onmi_sebymar_pricelist_purchase.field_product_pricelist_item_purchase__product_tmpl_id
+msgid ""
+"Specify a template if this rule only applies to one product template. Keep "
+"empty otherwise."
+msgstr ""
+"Especificar plantilla de producto si sólo aplica a una plantilla de "
+"productos (sus variantes). Mantener vacío en otro caso."
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model:res.groups,comment:onmi_sebymar_pricelist_purchase.group_product_pricelist_purchase
+msgid ""
+"The user will be able to access all product pricelist purchase and create/"
+"edit them.\n"
+"            "
+msgstr ""
+"El usuario podrá acceder a todas las tarifas de compra y crear/editarlas.\n"
+"\t"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model_terms:ir.actions.act_window,help:onmi_sebymar_pricelist_purchase.product_pricelist_purchase_act_window
+msgid "There is no examples click here to add new Pricelist Purchase."
+msgstr "No hay ejemplos, haga click aquí para añadir tarifa de compra."
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_pricelist_purchase.purchase_order_form_inherit_pricelist
+msgid "This update all line prices, are you sure?"
+msgstr "Esto actualizará todas las líneas, ¿está seguro/a?"
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_pricelist_purchase.purchase_order_form_inherit_pricelist
+msgid "Update discounts of lines and costs depend on pricelist."
+msgstr "Actualizar descuentos de las líneas dependientes de la tarifa."
+
+#. module: onmi_sebymar_pricelist_purchase
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_pricelist_purchase.purchase_order_form_inherit_pricelist
+msgid "Update prices"
+msgstr "Actualizar costes"

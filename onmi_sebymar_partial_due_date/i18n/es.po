@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* onmi_sebymar_partial_due_date
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-06 08:19+0000\n"
+"PO-Revision-Date: 2023-03-06 09:23+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: onmi_sebymar_partial_due_date
+#. odoo-python
+#: code:addons/onmi_sebymar_partial_due_date/models/account_move.py:0
+#: model:ir.model.fields,help:onmi_sebymar_partial_due_date.field_account_bank_statement_line__invoice_date_due_partial
+#: model:ir.model.fields,help:onmi_sebymar_partial_due_date.field_account_move__invoice_date_due_partial
+#: model:ir.model.fields,help:onmi_sebymar_partial_due_date.field_account_payment__invoice_date_due_partial
+#, python-format
+msgid "Date due of next payment to do."
+msgstr "Fecha de vencimiento del siguiente pago a realizar."
+
+#. module: onmi_sebymar_partial_due_date
+#: model:ir.model.fields,field_description:onmi_sebymar_partial_due_date.field_account_payment_register__generate_one_payment
+msgid "Generate only one payment"
+msgstr "Generar un pago por factura"
+
+#. module: onmi_sebymar_partial_due_date
+#: model:ir.model,name:onmi_sebymar_partial_due_date.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: onmi_sebymar_partial_due_date
+#: model:ir.model.fields,field_description:onmi_sebymar_partial_due_date.field_account_bank_statement_line__invoice_date_due_partial
+#: model:ir.model.fields,field_description:onmi_sebymar_partial_due_date.field_account_move__invoice_date_due_partial
+#: model:ir.model.fields,field_description:onmi_sebymar_partial_due_date.field_account_payment__invoice_date_due_partial
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_partial_due_date.sebymar_view_account_invoice_filter_inherit_partial_due_date
+msgid "Partial Due Date"
+msgstr "Fecha Vencimiento Parcial"
+
+#. module: onmi_sebymar_partial_due_date
+#: model:ir.model,name:onmi_sebymar_partial_due_date.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: onmi_sebymar_partial_due_date
+#: model:ir.model,name:onmi_sebymar_partial_due_date.model_account_payment_register
+msgid "Register Payment"
+msgstr "Registrar pago"
+
+#. module: onmi_sebymar_partial_due_date
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_partial_due_date.sebymar_view_move_form_inherit_due_date_partial
+msgid "Update partial date"
+msgstr "Actualizar fecha parcial"
+
+#. module: onmi_sebymar_partial_due_date
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_partial_due_date.sebymar_view_move_form_inherit_due_date_partial
+msgid "Update partial due date."
+msgstr "Actualizar fecha parcial."

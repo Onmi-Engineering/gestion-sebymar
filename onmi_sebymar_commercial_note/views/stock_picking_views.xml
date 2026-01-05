@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <record id="sebymar_view_picking_form_inherit_commercial_note" model="ir.ui.view">
+            <field name="name">view_picking_form</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <field name="sale_id" invisible="1"/>
+                    <page name="commercial_note" string="Commercial Note" invisible="not sale_id">
+                        <field name="commercial_note" widget="html"/>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

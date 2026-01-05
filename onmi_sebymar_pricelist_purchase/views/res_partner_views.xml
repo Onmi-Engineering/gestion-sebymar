@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- TODO: Esto no apunta a ningún sitio y los campos no existen -->
+        <record id="sebymar_res_partner_form_view_inherit_quit_discount" model="ir.ui.view">
+            <field name="name">sebymar_res_partner_form_view_inherit_quit_discount</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="purchase_discount.res_partner_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='default_supplierinfo_discount']" position="replace">
+                </xpath>
+                <xpath expr="//div[@name='supplierinfo_discount_disabled']" position="replace">
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

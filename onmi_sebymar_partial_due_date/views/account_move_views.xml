@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <record id="sebymar_view_move_form_inherit_due_date_partial" model="ir.ui.view">
+            <field name="name">sebymar.view.move.form.inherit.due.date.partial</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_date']" position="after">
+                    <label for="invoice_date_due_partial"/>
+                    <div name="partial_due_date" class="o_row">
+                        <field name="invoice_date_due_partial"/>
+                        <button string="Update partial date" name="update_partial_due_date" class="btn-link mb-1 px-0" icon="fa-refresh" type="object" title="Update partial due date."/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+        <record id="sebymar_view_invoice_tree_inherit_due_date_partial" model="ir.ui.view">
+            <field name="name">sebymar.view.invoice.tree.inherit.due.date.partial</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_invoice_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_date_due']" position="before">
+                    <field name="invoice_date_due_partial" optional="show" invisible="payment_state in ('paid', 'in_payment', 'reversed')"/>
+                </xpath>
+                <xpath expr="//field[@name='invoice_date_due']" position="replace">
+                    <field name="invoice_date_due" optional="show" invisible="payment_state in ('paid', 'in_payment', 'reversed')"/>
+                </xpath>
+                <xpath expr="//field[@name='invoice_date_due']" position="after">
+                    <field name="invoice_payment_term_id" optional="show"/>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="sebymar_view_account_invoice_filter_inherit_partial_due_date" model="ir.ui.view">
+            <field name="name">sebymar_view_account_invoice_filter_inherit_partial_due_date</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group/filter[@name='duedate']" position="after">
+                    <filter string="Partial Due Date" name="partialduedate" context="{'group_by': 'invoice_date_due_partial'}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

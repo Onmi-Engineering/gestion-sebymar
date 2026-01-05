@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <record id="product_pricelist_purchase_form_view" model="ir.ui.view">
+            <field name="name">product.pricelist.purchase.form</field>
+            <field name="model">product.pricelist.purchase</field>
+            <field name="arch" type="xml">
+                <form string="Pricelist Purchase">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="Name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="create_date"/>
+                                <field name="company_id"/>
+                            </group>
+                            <group>
+                                <field name="active"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page name="pricelist_rules" string="Price Rules">
+                                <field name="item_ids" nolabel="1" context="{'default_pricelist_id': active_id}" domain="[('pricelist_id', '=', id)]">
+                                    <list>
+                                        <field name="applied_on"/>
+                                        <field name="categ_id" readonly="applied_on == '3_global'" column_invisible="applied_on == '3_global'"/>
+                                        <field name="discount"/>
+                                    </list>
+                                    <form>
+                                        <field name="company_id" invisible="1"/>
+                                        <group>
+                                            <group>
+                                                <field name="applied_on"/>
+                                            </group>
+                                            <group>
+                                                <field name="categ_id" invisible="applied_on == '3_global'"/>
+                                                <field name="discount"/>
+                                            </group>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="product_pricelist_purchase_tree_view" model="ir.ui.view">
+            <field name="name">product.pricelist.purchase.tree</field>
+            <field name="model">product.pricelist.purchase</field>
+            <field name="arch" type="xml">
+                <list string="Pricelist Purchase">
+                    <field name="name"/>
+                    <field name="create_date"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="product_pricelist_purchase_search_view" model="ir.ui.view">
+            <field name="name">product.pricelist.purchase.search</field>
+            <field name="model">product.pricelist.purchase</field>
+            <field name="arch" type="xml">
+                <search string="Pricelist Purchase">
+                    <group expand="1" string="Group By">
+                        <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="product_pricelist_purchase_kanban_view" model="ir.ui.view">
+            <field name="name">product.pricelist.purchase.kanban</field>
+            <field name="model">product.pricelist.purchase</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="id"/>
+                    <field name="name"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click o_res_partner_kanban">
+                                <div class="oe_kanban_details">
+                                    <strong class="o_kanban_record_title oe_partner_heading">
+                                        <field name="name"/>
+                                    </strong>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="product_pricelist_purchase_act_window" model="ir.actions.act_window">
+            <field name="name">Pricelist Purchase</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.pricelist.purchase</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    There is no examples click here to add new Pricelist Purchase.
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="Pricelist Purchase" id="product_pricelist_purchase_menu" parent="purchase.menu_purchase_products" action="product_pricelist_purchase_act_window" sequence="20" groups="onmi_sebymar_pricelist_purchase.group_product_pricelist_purchase"/>
+
+    </data>
+</odoo>

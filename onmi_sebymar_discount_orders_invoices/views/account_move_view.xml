@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="sebymar_view_move_form_inherit_discount">
+            <field name="name">sebymar_view_move_form_inherit_discount</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='tax_totals']" position="before">
+                    <field name="total_discount" widget="monetary"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

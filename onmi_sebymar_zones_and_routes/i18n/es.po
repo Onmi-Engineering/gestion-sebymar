@@ -1,0 +1,150 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* onmi_sebymar_zones_and_routes
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-18 06:47+0000\n"
+"PO-Revision-Date: 2025-02-18 07:50+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_company_contact_tag__color
+msgid "Color Index"
+msgstr "Índice de color"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model,name:onmi_sebymar_zones_and_routes.model_company_contact_tag
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_res_partner__company_contact_tag_ids
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_res_users__company_contact_tag_ids
+msgid "Company Contact Tags"
+msgstr "Etiquetas de Empresa"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model,name:onmi_sebymar_zones_and_routes.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_company_contact_tag__create_uid
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_route__create_uid
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_zone__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_company_contact_tag__create_date
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_route__create_date
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_zone__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_company_contact_tag__display_name
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_route__display_name
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_zone__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_company_contact_tag__id
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_route__id
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_zone__id
+msgid "ID"
+msgstr "Identificación"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_company_contact_tag____last_update
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_route____last_update
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_zone____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_company_contact_tag__write_uid
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_route__write_uid
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_zone__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_company_contact_tag__write_date
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_route__write_date
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_zone__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_company_contact_tag__name
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_route__name
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_zone__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:res.groups,name:onmi_sebymar_zones_and_routes.group_onmi_categorias
+msgid "Onmi categorìas"
+msgstr ""
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_route__partner_ids
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_zone__partner_ids
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_res_partner__route_id
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_res_users__route_id
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_zone__route_id
+msgid "Route"
+msgstr "Ruta"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.actions.act_window,name:onmi_sebymar_zones_and_routes.route_act_window
+#: model:ir.model,name:onmi_sebymar_zones_and_routes.model_route
+#: model:ir.ui.menu,name:onmi_sebymar_zones_and_routes.route_menu
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_zones_and_routes.route_form_view
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_zones_and_routes.route_tree_view
+msgid "Routes"
+msgstr "Rutas"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model_terms:ir.actions.act_window,help:onmi_sebymar_zones_and_routes.route_act_window
+msgid "There is no examples click here to add new Routes."
+msgstr "No hay ejemplos , haga click aquí para añadir nuevas Rutas."
+
+#. module: onmi_sebymar_zones_and_routes
+#: model_terms:ir.actions.act_window,help:onmi_sebymar_zones_and_routes.zone_act_window
+msgid "There is no examples click here to add new zones."
+msgstr "No hay ejemplos , haga click aquí para añadir nuevas Zonas."
+
+#. module: onmi_sebymar_zones_and_routes
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_zones_and_routes.route_form_view
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_zones_and_routes.zone_form_view
+msgid "Title"
+msgstr "Título"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_res_partner__zone_id
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_res_users__zone_id
+#: model:ir.model.fields,field_description:onmi_sebymar_zones_and_routes.field_route__zone_ids
+msgid "Zone"
+msgstr "Zona"
+
+#. module: onmi_sebymar_zones_and_routes
+#: model:ir.actions.act_window,name:onmi_sebymar_zones_and_routes.zone_act_window
+#: model:ir.model,name:onmi_sebymar_zones_and_routes.model_zone
+#: model:ir.ui.menu,name:onmi_sebymar_zones_and_routes.zone_menu
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_zones_and_routes.zone_form_view
+#: model_terms:ir.ui.view,arch_db:onmi_sebymar_zones_and_routes.zone_tree_view
+msgid "Zones"
+msgstr "Zonas"
