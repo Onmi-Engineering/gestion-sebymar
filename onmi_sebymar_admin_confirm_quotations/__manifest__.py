@@ -1,6 +1,6 @@
 {
     'name': 'SEBYMAR Admin confirm quotations',
-    'version': '15.0.0.1',
+    'version': '18.0.0.1',
     'summary': 'Only Admin can confirm sale & purchase quotations.',
     'description': 'Only Admin can confirm sale & purchase quotations.',
     'category':  'ONMI developments',

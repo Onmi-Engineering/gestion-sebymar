@@ -1,6 +1,6 @@
 {
     'name': 'SEBYMAR Datamatrix',
-    'version': '15.0.0.1',
+    'version': '18.0.0.1',
     'summary': 'Create datamatrix registers',
     'description': 'Create datamatrix registers',
     'category':  'ONMI developments',

@@ -1,6 +1,6 @@
 {
     'name': 'SEBYMAR Pricelist Purchase',
-    'version': '15.0.0.1',
+    'version': '18.0.0.1',
     'summary': 'Pricelist Purchase',
     'description': 'Pricelist Purchase',
     'category': 'ONMI developments',

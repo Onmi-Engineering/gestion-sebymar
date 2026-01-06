@@ -1,6 +1,6 @@
 {
     'name': 'SEBYMAR Subcategories product',
-    'version': '15.0.0.1',
+    'version': '18.0.0.1',
     'summary': 'Create new subcategories',
     'description': 'Create new subcategories',
     'category':  'ONMI developments',

@@ -1,6 +1,6 @@
 {
     'name': 'ONMI Last Auth Field',
-    'version': '15.0.0.1',
+    'version': '18.0.0.1',
     'summary': 'Create editable Last Authentication Field',
     'description': 'Create editable Last Authentication Field',
     'category':  'ONMI developments',

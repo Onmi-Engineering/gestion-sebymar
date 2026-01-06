@@ -1,6 +1,6 @@
 {
     'name': 'SEBYMAR discounts on orders and sales',
-    'version': '15.0.0.1',
+    'version': '18.0.0.1',
     'summary': 'Discounts on orders and sales',
     'description': 'Discounts on orders and sales',
     'category':  'ONMI developments',

@@ -1,6 +1,6 @@
 {
     'name': 'SEBYMAR Valued Report Picking',
-    'version': '15.0.1',
+    'version': '18.0.0.1',
     'summary': 'Valued Report Pickings.',
     'description': 'VAlued Report Pickings.',
     'category': 'Stock',

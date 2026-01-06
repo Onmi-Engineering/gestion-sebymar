@@ -1,6 +1,6 @@
 {
     'name': 'SEBYMAR Zones & Routes',
-    'version': '15.0.0.1',
+    'version': '18.0.0.1',
     'summary': 'Allow Create zones and routes',
     'description': 'Allow Create zones and routes',
     'category':  'ONMI developments',

@@ -1,6 +1,6 @@
 {
     'name': 'SEBYMAR Commercial note',
-    'version': '15.0.0.1',
+    'version': '18.0.0.1',
     'summary': 'Create commercial note from SO to SP.',
     'description': 'Create commercial note from SO to SP.',
     'category':  'ONMI developments',
