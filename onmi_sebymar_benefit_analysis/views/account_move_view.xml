@@ -10,13 +10,13 @@
                 <xpath expr="//field[@name='payment_reference']" position="after">
                     <field name="show_margin" invisible="move_type != 'out_invoice' and move_type != 'out_refund'"/>
                 </xpath>
-                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='product_id']" position="before">
+                <xpath expr="//field[@name='invoice_line_ids']/list/field[@name='product_id']" position="before">
                     <field name="move_type" invisible="1"/>
                 </xpath>
-                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='product_id']" position="after">
+                <xpath expr="//field[@name='invoice_line_ids']/list/field[@name='product_id']" position="after">
                     <field name="purchase_price" widget="monetary" optional="hide" invisible="move_type != 'out_invoice'"/>
                 </xpath>
-                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='purchase_price']" position="after">
+                <xpath expr="//field[@name='invoice_line_ids']/list/field[@name='purchase_price']" position="after">
                     <field name="margin" widget="monetary" optional="hide" invisible="move_type != 'out_invoice'"/>
                 </xpath>
             </field>
