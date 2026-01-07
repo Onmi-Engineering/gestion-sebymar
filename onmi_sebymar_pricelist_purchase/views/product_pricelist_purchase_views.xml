@@ -26,7 +26,7 @@
 
                         <notebook>
                             <page name="pricelist_rules" string="Price Rules">
-                                <field name="item_ids" nolabel="1" context="{'default_pricelist_id': active_id}" domain="[('pricelist_id', '=', id)]">
+                                <field name="item_ids" nolabel="1" domain="[('pricelist_id', '=', id)]">
                                     <list>
                                         <field name="applied_on"/>
                                         <field name="categ_id" readonly="applied_on == '3_global'" column_invisible="applied_on == '3_global'"/>
