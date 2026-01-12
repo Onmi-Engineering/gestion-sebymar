@@ -139,6 +139,6 @@ class AccountPaymentRegister(models.TransientModel):
         res = super(AccountPaymentRegister, self).action_create_payments()
         accounts_move = self.env['account.move'].search([('id', 'in', self.line_ids.move_id.ids)])
         for am in accounts_move:
-            am._compute_invoice_date_due_partial()
+            am._compute_invoice_date_due()
         return res
 

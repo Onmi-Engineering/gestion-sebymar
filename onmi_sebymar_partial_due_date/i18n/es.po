@@ -20,9 +20,9 @@ msgstr ""
 #. module: onmi_sebymar_partial_due_date
 #. odoo-python
 #: code:addons/onmi_sebymar_partial_due_date/models/account_move.py:0
-#: model:ir.model.fields,help:onmi_sebymar_partial_due_date.field_account_bank_statement_line__invoice_date_due_partial
-#: model:ir.model.fields,help:onmi_sebymar_partial_due_date.field_account_move__invoice_date_due_partial
-#: model:ir.model.fields,help:onmi_sebymar_partial_due_date.field_account_payment__invoice_date_due_partial
+#: model:ir.model.fields,help:onmi_sebymar_partial_due_date.field_account_bank_statement_line__invoice_date_due
+#: model:ir.model.fields,help:onmi_sebymar_partial_due_date.field_account_move__invoice_date_due
+#: model:ir.model.fields,help:onmi_sebymar_partial_due_date.field_account_payment__invoice_date_due
 #, python-format
 msgid "Date due of next payment to do."
 msgstr "Fecha de vencimiento del siguiente pago a realizar."
@@ -38,9 +38,9 @@ msgid "Journal Entry"
 msgstr "Asiento contable"
 
 #. module: onmi_sebymar_partial_due_date
-#: model:ir.model.fields,field_description:onmi_sebymar_partial_due_date.field_account_bank_statement_line__invoice_date_due_partial
-#: model:ir.model.fields,field_description:onmi_sebymar_partial_due_date.field_account_move__invoice_date_due_partial
-#: model:ir.model.fields,field_description:onmi_sebymar_partial_due_date.field_account_payment__invoice_date_due_partial
+#: model:ir.model.fields,field_description:onmi_sebymar_partial_due_date.field_account_bank_statement_line__invoice_date_due
+#: model:ir.model.fields,field_description:onmi_sebymar_partial_due_date.field_account_move__invoice_date_due
+#: model:ir.model.fields,field_description:onmi_sebymar_partial_due_date.field_account_payment__invoice_date_due
 #: model_terms:ir.ui.view,arch_db:onmi_sebymar_partial_due_date.sebymar_view_account_invoice_filter_inherit_partial_due_date
 msgid "Partial Due Date"
 msgstr "Fecha Vencimiento Parcial"

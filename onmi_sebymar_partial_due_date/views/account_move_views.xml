@@ -8,10 +8,15 @@
             <field name="inherit_id" ref="account.view_move_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='invoice_date']" position="after">
-                    <label for="invoice_date_due_partial"/>
+                    <label for="invoice_date_due"/>
                     <div name="partial_due_date" class="o_row">
-                        <field name="invoice_date_due_partial"/>
-                        <button string="Update partial date" name="update_partial_due_date" class="btn-link mb-1 px-0" icon="fa-refresh" type="object" title="Update partial due date."/>
+                        <field name="invoice_date_due"/>
+                        <button name="update_partial_due_date"
+                                class="btn-link mb-1 px-0"
+                                icon="fa-refresh"
+                                type="object"
+                                string="Update partial date"
+                                title="Update partial due date."/>
                     </div>
                 </xpath>
             </field>
@@ -21,9 +26,9 @@
             <field name="model">account.move</field>
             <field name="inherit_id" ref="account.view_invoice_tree"/>
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='invoice_date_due']" position="before">
-                    <field name="invoice_date_due_partial" optional="show" invisible="payment_state in ('paid', 'in_payment', 'reversed')"/>
-                </xpath>
+                <!--<xpath expr="//field[@name='invoice_date_due']" position="before">-->
+                <!--    <field name="invoice_date_due" optional="show" invisible="payment_state in ('paid', 'in_payment', 'reversed')"/>-->
+                <!--</xpath>-->
                 <xpath expr="//field[@name='invoice_date_due']" position="replace">
                     <field name="invoice_date_due" optional="show" invisible="payment_state in ('paid', 'in_payment', 'reversed')"/>
                 </xpath>
@@ -40,7 +45,7 @@
             <field name="inherit_id" ref="account.view_account_invoice_filter"/>
             <field name="arch" type="xml">
                 <xpath expr="//group/filter[@name='duedate']" position="after">
-                    <filter string="Partial Due Date" name="partialduedate" context="{'group_by': 'invoice_date_due_partial'}"/>
+                    <filter string="Partial Due Date" name="partialduedate" context="{'group_by': 'invoice_date_due'}"/>
                 </xpath>
             </field>
         </record>

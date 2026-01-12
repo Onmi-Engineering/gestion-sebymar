@@ -11,4 +11,4 @@ class AccountPayment(models.Model):
         """
         invoices = self.reconciled_invoice_ids
         super(AccountPayment, self).action_draft()
-        invoices._compute_invoice_date_due_partial()
+        invoices._compute_invoice_date_due()
