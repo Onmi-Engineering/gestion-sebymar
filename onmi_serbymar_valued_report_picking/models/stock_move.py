@@ -8,10 +8,12 @@ class StockMove(models.Model):
     price_unit = fields.Float('Unit Price', default=0.0, compute="_compute_valued_prices")
     taxes_id = fields.Many2many('account.tax', help="Default taxes used when selling/purchasing the product.",
                                 string='Taxes', compute="_compute_valued_prices")
-    price_subtotal = fields.Monetary('Price Subtotal', digits='Product Price', related='sale_line_id.price_subtotal', readonly=True)
+    price_subtotal = fields.Monetary('Price Subtotal', digits='Product Price', related='sale_line_id.price_subtotal',
+                                     readonly=True)
     price_subtotal_with_taxes = fields.Float('Price Taxes Subtotal', digits='Product Price', default=0.0,
                                              compute="_compute_valued_prices")
-    price_subtotal_without_desc = fields.Monetary('Price Subtotal', digits='Product Price', related='sale_line_id.price_subtotal', readonly=True)
+    price_subtotal_without_desc = fields.Monetary('Price Subtotal', digits='Product Price',
+                                                  related='sale_line_id.price_subtotal', readonly=True)
     discount = fields.Float(
         related='sale_line_id.discount',
         string='Desc.%',
@@ -31,19 +33,15 @@ class StockMove(models.Model):
             line.discounted_subtotal = line.price_subtotal - (line.price_subtotal * (line.discount / 100))
 
     def _compute_bo_total_discounted(self):
-        # bo_discounted = 0
-        # TODO: Esto huele. Se están actualizando registros que no están en self.
         for bo_line in self.picking_id.backorder_ids.move_ids.filtered(lambda x: x.product_uom_qty):
             bo_line.bo_total_discounted = bo_line.price_subtotal - (bo_line.price_subtotal * (bo_line.discount / 100))
 
     def _compute_total_discount(self):
         for rec in self:
-            # rec.discount_dif = 0
             rec.discount_dif = (rec.product_uom_qty * rec.price_unit) - rec.discounted_subtotal
 
     def compute_subtotal(self):
         for rec in self:
-            # rec.price_subtotal = 0
             rec.price_subtotal = rec.price_subtotal_without_desc - rec.discount_dif
 
     @api.depends('sale_line_id', 'purchase_line_id')
@@ -89,11 +87,18 @@ class StockMoveLine(models.Model):
             if move_line:
                 price_unit = move_line.move_id.price_unit
                 taxes = ', '.join(f"{amount}%" for amount in move_line.move_id.taxes_id.mapped('amount'))
-
                 discount_dif = move_line.move_id.discount_dif
                 price_subtotal = move_line.move_id.price_subtotal
+
+                # Agregar los nuevos campos
                 aggregated_move_lines[aggregated_move_line]['price_unit'] = price_unit
-                aggregated_move_lines[aggregated_move_line]['taxes'] = str(taxes) + ' %'
+                aggregated_move_lines[aggregated_move_line]['taxes'] = str(taxes) if taxes else ''
                 aggregated_move_lines[aggregated_move_line]['discount_dif'] = discount_dif
                 aggregated_move_lines[aggregated_move_line]['price_subtotal'] = price_subtotal
+
+                # En Odoo 18, qty_done ya no existe, usar quantity en su lugar
+                if 'quantity' not in aggregated_move_lines[aggregated_move_line]:
+                    aggregated_move_lines[aggregated_move_line]['quantity'] = aggregated_move_lines[
+                        aggregated_move_line].get('qty_done', 0.0)
+
         return aggregated_move_lines
