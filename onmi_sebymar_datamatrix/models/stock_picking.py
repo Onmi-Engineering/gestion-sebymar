@@ -5,8 +5,7 @@ import html2text
 class StockPicking(models.Model):
     _inherit = 'stock.picking'
 
-    datamatrix_line_ids = fields.One2many('datamatrix', 'picking_id', string='Datamatrix',
-                                          domain="[('picking_id', '=', id]", default=False)
+    datamatrix_line_ids = fields.One2many('datamatrix', 'picking_id', string='Datamatrix')
 
     def generate_datamatrix_lines(self):
         for rec in self:
